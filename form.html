@@ -1,0 +1,87 @@
+<html>
+<head>
+   <title>Anime Survey_Form</title>
+   <link rel="stylesheet" href="form1.css"/>
+</head>
+<body>
+
+<div class="container">
+   <header>
+      <h1 id="title" class="text-center">Anime Survey</h1>
+      <p id="description" class="description text-center">Thank You For Your Answer</p>
+   </header>
+<form id="survey-form">
+   <div class="form-group">
+   <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter Name"required/>
+   </div>
+   <div class="form-group">
+   <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter Email"required/>
+   </div>
+   <div class="form-group">
+   <label id="age-label" for="age" >Age<span class="clue">(Optional)</span></label>
+      <input type="number" id="name" min="16" max="60" class="form-control" placeholder="Age"required/>
+   </div>
+  <div class="form-group">
+   <p>Which Genre Do you Love The Most?</p>
+   <select id="dropdown" name="genre" class="form-control" required>
+   <option disabled selected >Select From The Following</option>
+   <option value="Action">Action</option>
+   <option value="Drama">Drama</option>
+   <option value="Love/Romance">Love/Romance</option>
+   <option value="Slice of Life">Slice of Life</option>
+   <option value="Horror">Horror</option>
+   <option value="other">Other</option>
+   </select>
+   </div>
+
+   <div class="form-group">
+   <p>Would You Recommend Anime To Your Friend?</p>
+   <label><input type="radio" name="recommend" value="definitely" class="input-radio" checked/>Definitely</label>
+   
+   <label><input type="radio" name="recommend" value="maybe" class="input-radio"/>Maybe</label>
+   <label><input type="radio" name="recommend" value="dont-know" class="input-radio"/>Don't Know</label>
+   </div>
+   <div class="form-group">
+   <p>Which anime do you love the most?</p>
+   <select id="love" name="anime" class="form-control" required>
+      <option disabled selected>--select One--</option>
+      <option value="dbz">Dragon BallZ</option>
+      <option value="nauto">Naruto:Shippuden</option>
+      <option value="aot">Shingeki no Kyojin</option>
+      <option value="demon">Demon Slayer</option>
+      <option value="opm">One Punch Man</option>
+      </select>
+   </div>
+
+   <div class="form-group">
+   <p>Which Anime Character You like?
+      <span class="clue">(Choose who You Like)</span>
+   </p>
+   <label>
+      <input type="checkbox" name="character" value="Uzumaki" class="input-checkbox"/>Uzumaki Naruto</label>
+   <label>
+      <input type="checkbox" name="character" value="sasuke" class="input-checkbox"/>Uchiha Sasuke</label>
+   <label>
+      <input type="checkbox" name="character" value="itachi" class="input-checkbox"/>Uchiha Itachi</label>
+   <label>
+      <input type="checkbox" name="character" value="kamado" class="input-checkbox"/>Kamado Tanjiro</label>
+   <label>
+      <input type="checkbox" name="character" value="zenitsu" class="input-checkbox"/>Zenitsu</label>
+   <label>
+      <input type="checkbox" name="character" value="eren" class="input-checkbox"/>Eren Jaeger</label>
+   <label>
+      <input type="checkbox" name="character" value="levi" class="input-checkbox"/>Levi Ackerman</label>
+   </div>
+<div class="form-group">
+   <p>Any Other Anime You Want to watch?</p>
+   <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Your Anime Here......"></textarea>
+   </div>
+   <div class="form-group">
+   <button type="submit" id="submit" class="submit-button">Submit</button>
+   </div>
+</form>
+</div>
+</body>
+</html>
